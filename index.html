@@ -14,7 +14,7 @@
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light  shadow-lg">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
             <div class="container">
                 <img src="./images/logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,10 +28,10 @@
                             <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="#">Shoes</a>
+                            <a class="nav-link active fw-bold" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="#">Backpack</a>
+                            <a class="nav-link active fw-bold" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active fw-bold" href="#">Subscribe</a>
@@ -49,7 +49,7 @@
         <section class="slide-section">
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner mt-5">
                         <div
                             class="col-lg-7 carousel-item active d-flex align-items-center slide-bg-color mt-3 mb-5 p-5 rounded">
                             <div>
@@ -144,9 +144,9 @@
                     </div>
                     <div class="col-4">
                         <div
-                            class="d-flex align-items-center border border-dark p-3 justify-content-between ps-5 bg-warning rounded ">
+                            class="d-flex align-items-center border border-dark p-3 justify-content-between ps-3 bg-warning rounded ">
                             <div>
-                                <h1 class="text-white">Bag</h1>
+                                <h1 class="text-white">Backpack</h1>
                             </div>
                             <div><img class="w-75" src="./images/categories/bag.png" alt=""></div>
                         </div>
@@ -160,11 +160,11 @@
         <!-- categories end -->
 
         <!-- Shoes section start  -->
-        <section class="shoes-section">
+        <section class="shoes-section" id="shoes">
             <div class="container">
-                <h1 class="text-primary">Shoes</h1>
+                <h2 class="text-primary">Shoes</h2>
                 <div class="card-group">
-                    <div class="card shadow">
+                    <div class="card bg-light shadow border-primary rounded">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Supply 350
@@ -176,7 +176,7 @@
                             <button class="btn bg-warning fw-bold">Buy Now</button>
                         </div>
                     </div>
-                    <div class="card shadow ms-4 me-4">
+                    <div class="card bg-light shadow ms-4 me-4 border border-primary rounded">
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Nike 360
@@ -188,7 +188,7 @@
                             <button class="btn bg-warning fw-bold">Buy Now</button>
                         </div>
                     </div>
-                    <div class="card shadow">
+                    <div class="card bg-light shadow border border-primary rounded">
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title">Red Fox
@@ -204,7 +204,88 @@
             </div>
         </section>
         <!-- Shoes section end -->
+
+        <!-- Bag section start  -->
+        <section class="bag-section" id="backpack">
+            <div class="container mt-5">
+                <h2 class="text-success">Backpack</h2>
+                <div class="card-group">
+                    <div class="card bg-light shadow border-success rounded">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Red Bull
+                            </h3>
+                            <h5>$350</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <button class="btn bg-warning fw-bold">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card bg-light shadow ms-4 me-4 border border-success rounded">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Primary School
+                            </h3>
+                            <h5>$800</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <button class="btn bg-warning fw-bold">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card bg-light shadow border border-success rounded">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Blackberry
+                            </h3>
+                            <h5>$900</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <button class="btn bg-warning fw-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bag section end -->
+
+        <!-- subscribe section start  -->
+        <section class="subscribe-section" id="subscribe">
+            <div class="container">
+                <div
+                    class="slide-bg-color rounded shadow mt-5 mb-5 p-5 align-items-center justify-content-center d-flex flex-column ">
+                    <div>
+                        <h1>LET'S STAY IN TOUCH!</h1>
+                        <p>Get updates on sales, specials and more</p>
+
+
+                        <form>
+                            <div class="mb-2">
+                                <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby=""
+                                    placeholder="Email Address">
+                            </div>
+
+                            <button type="submit" class="btn btn-warning fw-bold">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- subscribe section end -->
     </main>
+    <!-- footer section start -->
+    <footer class="text-center">
+        <small class="text-black">©2023. Panda Commerce. All rights reserved by <span
+                class="text-danger fw-bold">Jobayer
+                Ahmed</span></small>
+    </footer>
+    <!-- footer section end -->
 
     <script src="./bootstrap.min.js"></script>
 </body>
